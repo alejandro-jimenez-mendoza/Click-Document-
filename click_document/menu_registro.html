@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Click Document</title>
+	<link href="estilos.css" rel="stylesheet" type="text/css">
+	 <link rel="shortcut icon" href="img/queen.png">
+
+     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+	
+
+		<div id="contenedor">
+			<div id="centro">
+				<div id="centro_1">
+					<div id="titulo">Opciones</div>
+
+                    <form id="registro_a" action="registro_estudiantes.php" method="post">
+
+					 <p>Nombres: <input id="nombres_r" type="text" name="nombres_r" placeholder="nombre completo" required></p>
+                      <p>Apellidos: <input id="ape_r" type="text" name="ape_r" placeholder="apellidos" required></p>
+                        <p>Fecha de nacimiento:<input id="f_naci_r" type="date" name="f_naci_r" placeholder="fecha de nacimiento" required></p>
+                        <p>Codigo Estudiantil: <input id="cod_estu_r" type="number" name="cod_estu_r" placeholder="codigo estudiantil" required></p>
+                        <p>Descripción: <input id="descripcion_r" type="text" name="descripcion_r" placeholder="descripcion" required></p>
+                        <p>Telefono: <input id="telefono_r" type="number" name="telefono_r" placeholder="telefono" required></p>
+                        <p>Email: <input id="email_r" type="email" name="email_r" placeholder="correo electronico" required></p>
+                        <p id="ciudad">Ct Tutorial: <select name="cttutorial" required>
+                           <option>San Juan Nepomuceno</option><option>Carmen de Bolivar</option><option>Magangué</option><option>Mompox</option><option>Lorica</option><option>Cereté</option></select></p>
+                        <input type="submit" value="Guardar" id="guardar">  <input type="reset" value="Borrar" id="borrar">
+                    </form>
+                    <br>
+
+				</div>
+			</div>
+		</div>
+	
+	
+		<style>
+            .input {
+    font-family: 'Overpass', sans-serif;
+    font-size: 105%;
+    color: #1b262c;
+    
+    display: block;
+    //*width: 100%;*//
+    height: 40px;
+    
+    margin-bottom: 12px;
+    padding: 7px 4px 6px 10px;
+    
+    box-sizing: border-box;
+    
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+.input::placeholder {
+    font-family: 'Overpass', sans-serif;
+    color: #282726;
+}
+
+#form_registro{
+    text-align: center;
+            }
+.boton{
+	display: inline-block;
+	padding: 15px;
+	margin: 0px, 15px;
+}
+#botones_1{
+	margin-bottom: 10px;
+}
+#centro_1{
+    width: 100%;
+    padding: 50px 30px;
+    background-color: #3282b8;
+    align-content: center;
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    box-sizing: border-box;
+}
+#titulo {
+    font-size: 180%;
+    color:#bbe1fa;
+    text-align: center;
+    margin-bottom: 25px;
+}
+#contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 350px;
+}
+#centro{
+    max-width: 500px;
+    max-height: 520px;
+    width: 100%;
+    display: flex;
+}
+#registrar_b{
+    font-family: 'Overpass', sans-serif;
+    font-size: 105%;
+    color:#282726;
+    width: 310px;
+    height: 40px;
+    border: none;
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    background-color: #bbe1fa;    
+}
+#registrar_b:hover {
+    background-color: #0f4c75;
+    color:#bbe1fa;
+}
+#opciones_b{
+	
+    font-family: 'Overpass', sans-serif;
+    font-size: 105%;
+    color:#282726;
+    width: 310px;
+    height: 40px;
+    border: none;
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    background-color: #bbe1fa;    
+}
+#opciones_b:hover {
+    background-color: #0f4c75;
+    color:#bbe1fa;
+}
+
+#menu{
+     font-family: arial;
+}
+	     
+.fcc-btn {
+	     	text-decoration: none;
+	     	text-align: center;
+	     }
+body {
+    font-family: 'Overpass', sans-serif;
+    font-weight: normal;
+    font-size: 100%;
+    color: #1b262c;
+    
+    margin: 0;
+    background-color: #0f4c75;
+}
+
+			
+</body>
+</html>
